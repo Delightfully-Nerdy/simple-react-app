@@ -6,13 +6,13 @@ import Tweets from './components/Tweets';
 
 
 function App() {
-  const name = "delightfullynerdy";
+
   return (
     <div className="App">
       <h1>Hello React</h1>
       <div className="home">
         <Nav />
-        <Tweets  me={name} />
+        <Tweets />
       </div>
     </div>
   );
