@@ -2,7 +2,8 @@ import React,{useState} from 'react';
 import './App.css';
 
 // import component 
-
+import Nav from './components/Nav';
+import Video from './components/Video';
 
 
 function App() {
@@ -21,10 +22,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1 className={toggle ? 'active' : ''}>Hello React</h1>
+      {/* <h1 className={toggle ? 'active' : ''}>Hello React</h1>
       <h2>Counter {counter}</h2>
       <button onClick={incrementor}>Click</button>
-      <button onClick={toggler}>Toggle</button>
+      <button onClick={toggler}>Toggle</button> */}
+      <Nav toggle={toggle}/>
+      <Video nr={counter} setToggle={toggler}/>
     </div>
   );
 }
