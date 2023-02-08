@@ -22,12 +22,15 @@ function App() {
 
   return (
     <div className="App">
+      <h1>Hello React</h1>
+      <button onClick={incrementor}>Increment</button>
+      <h2>{counter}</h2>
       {/* <h1 className={toggle ? 'active' : ''}>Hello React</h1>
       <h2>Counter {counter}</h2>
       <button onClick={incrementor}>Click</button>
       <button onClick={toggler}>Toggle</button> */}
-      <Nav toggle={toggle}/>
-      <Video nr={counter} setToggle={toggler}/>
+      {/* <Nav toggle={toggle}/>
+      <Video nr={counter} setToggle={toggler}/> */}
     </div>
   );
 }
